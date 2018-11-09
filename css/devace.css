@@ -1,0 +1,128 @@
+body {
+	font-family: Calibri, sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+.clearfix:after {
+	content:'';
+	display: table;
+	width: 100%;
+	clear: both;
+}
+header {
+	background: url(../img/dev.jpg) no-repeat center top / cover;
+	height: 670px;
+	background-size: 100% auto;
+}
+.button-wrapper {
+  max-width: 150px;
+  margin: 20px auto;
+  text-align: center;
+  overflow: hidden;
+}
+.arrow-btn {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #FFF;
+  border: 1px solid #FFD700;
+  font-size: 20px;    
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  transition: .2s;
+  transition-delay: .1s;
+}
+.arrow-btn:hover {
+  color: #ECECE8;
+  border: 2px solid #F8E405;
+  padding: 15px 35px;   
+}
+.arrow-btn span {
+  position: absolute;
+  top: -30px;
+  left: 40px;
+  right: -2px;
+  bottom: -2px;
+  z-index: -1;
+  overflow: hidden;
+  transition: .35s cubic-bezier(.215,.61,.215,1);
+ }
+.arrow-btn span:before {
+  content: "";
+  position: absolute;
+  top: -5%;
+  left: -210%;
+  width: 100%;
+  height: 108%;
+  background: #FFF;
+  transform: skew(-15deg,0);
+  transition: .5s;
+ }
+.arrow-btn:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: -1000%;
+  height: 2px;
+  margin-top: -1px;
+  width: 400%;
+  background: #FFF;
+  transition: .5s;
+}
+.arrow-btn:hover:after {
+  width: 20%;
+  left: -80%;
+}
+.arrow-btn:hover span:before {left: -25%;}
+nav {
+	float: left;
+	margin-top: 1px;
+}
+.menu li {
+	float: right;
+	display: block;
+	margin-right: 20px;
+	margin-top: -20px;
+}
+.menu li a {
+	color: #FFD700;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+a {
+	text-decoration: none;
+	color: #FFD700
+}
+h2 {
+	color: #FFD700;
+	font-size: 25px;
+	margin-center: 40%;
+	margin-top: 25%;
+	font-family: Gotham Pro;
+}
+.containers {
+	background: #F8F8FF;
+	height: 1270px;
+}
+article .works {
+    overflow: hidden;
+    text-align: center;
+	
+}
+.works {
+  text-align: center;
+  overflow: hidden;
+}
+.works img:nth-child(3) {
+margin-left: 30px;
+}
+.works {
+	margin-top: 20px;
+}
+.works img:nth-child(2) {
+margin-left: 30px;
+}
